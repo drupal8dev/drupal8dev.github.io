@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Drupal 8 Development</title>
+  <title>Installing Drupal 8 - Drupal 8 Development</title>
   <meta name="author" content="drupal8dev">
 
   
-  <meta name="description" content="Drush 6, the current stable version, does not work with Drupal 8. We will need Drush 7 for that. See https://github.com/drush-ops/drush#drush- &hellip;">
+  <meta name="description" content="Getting Drupal 8 Drupal 8 is still pretty much in development, so there is no release on drupal.org yet. The best way to get the latest Drupal 8 is &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://drupal8dev.github.io">
+  <link rel="canonical" href="http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Drupal 8 Development" type="application/atom+xml">
@@ -63,87 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/10/15/drush-for-drupal-8/">Drush for Drupal 8</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-15T02:02:00+04:00" pubdate data-updated="true">Oct 15<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Drush 6, the current stable version, does not work with Drupal 8. We will need Drush 7 for that. See <a href="https://github.com/drush-ops/drush#drush-versions.">https://github.com/drush-ops/drush#drush-versions.</a></p>
-
-<p>Drush 7 is not stable yet so we want to keep running Drush 6 for Drupal 7 but use Drush 7 with Drupal 8. Here&rsquo;s how you can run multiple versions of Drush:</p>
-
-<h5>Step 1</h5>
-
-<p>Get Drush 7 via git. You could clone it to your home directory.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone https://github.com/drush-ops/drush.git ~/drush7</span></code></pre></td></tr></table></div></figure>
-
-
-<h5>Step 2</h5>
-
-<p>Setup a bash alias by adding the following line to <code>~/.bash_profile</code> or <code>~/.bashrc</code>.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ alias drush7='~/drush7/drush'</span></code></pre></td></tr></table></div></figure>
-
-
-<h5>Step 3</h5>
-
-<p>Reload <code>~/.bash_profile</code> or <code>~/.bashrc</code>.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ source ~/.bash_profile</span></code></pre></td></tr></table></div></figure>
-
-
-<h5>Test</h5>
-
-<p>You should now be able to run Drush commands for drupal 8. Try clearing the cache with:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ drush7 cc all</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/15/installing-drupal-8/">Installing Drupal 8</a></h1>
+      <h1 class="entry-title">Installing Drupal 8</h1>
     
     
       <p class="meta">
@@ -166,7 +91,7 @@
   </header>
 
 
-  <div class="entry-content"><p><img class="center" src="/images/drupal8-setup-screen.png" width="700" height="380" title="Drupal 8 Installation" alt="Drupal 8 Installation"></p>
+<div class="entry-content"><p><img class="center" src="/images/drupal8-setup-screen.png" width="700" height="380" title="Drupal 8 Installation" alt="Drupal 8 Installation"></p>
 
 <h2>Getting Drupal 8</h2>
 
@@ -210,23 +135,70 @@
 </ol>
 
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">drupal8dev</span></span>
+
+      
+
+
+
+
+
+
+
+
   
 
 
-    </article>
+<time datetime="2013-10-15T01:20:00+04:00" pubdate data-updated="true">Oct 15<span>th</span>, 2013</time>
+      
+
+<span class="categories">
   
-  <div class="pagination">
+    <a class='category' href='/blog/categories/drupal8/'>drupal8,</a>, <a class='category' href='/blog/categories/installation/'>installation</a>
+  
+</span>
+
+
+    </p>
     
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8/" data-via="drupal8dev" data-counturl="http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8/" >Tweet</a>
+  
+  
+  
 </div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/10/15/drush-for-drupal-8/" title="Next Post: Drush for Drupal 8">Drush for Drupal 8 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
   <h1>About</h1>
-  <p>We&#8217;re learning Drupal 8 and writing about it here.</p>
+  <p>We're learning Drupal 8 and writing about it here.</p>
   <p><strong>You can be part of this effort!</strong></p>
   <p>The source code for this site is found on <a href="https://github.com/drupal8dev/site">Github</a>. Want to improve something? Pull requests are welcomed <a href="https://github.com/drupal8dev/site">here</a>.</p>
 </section>
@@ -248,7 +220,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/drupal8dev">@drupal8dev</a> on GitHub
@@ -281,6 +253,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -295,7 +268,10 @@
       var disqus_shortname = 'drupal8dev';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8/';
+        var disqus_url = 'http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

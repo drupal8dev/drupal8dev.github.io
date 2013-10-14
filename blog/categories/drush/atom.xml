@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: drush | Drupal 8 Development]]></title>
+  <link href="http://drupal8dev.github.io/blog/categories/drush/atom.xml" rel="self"/>
+  <link href="http://drupal8dev.github.io/"/>
+  <updated>2013-10-15T02:50:17+04:00</updated>
+  <id>http://drupal8dev.github.io/</id>
+  <author>
+    <name><![CDATA[drupal8dev]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Drush for Drupal 8]]></title>
+    <link href="http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8/"/>
+    <updated>2013-10-15T02:02:00+04:00</updated>
+    <id>http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8</id>
+    <content type="html"><![CDATA[<p>Drush 6, the current stable version, does not work with Drupal 8. We will need Drush 7 for that. See <a href="https://github.com/drush-ops/drush#drush-versions.">https://github.com/drush-ops/drush#drush-versions.</a></p>
+
+<p>Drush 7 is not stable yet so we want to keep running Drush 6 for Drupal 7 but use Drush 7 with Drupal 8. Here&rsquo;s how you can run multiple versions of Drush:</p>
+
+<h5>Step 1</h5>
+
+<p>Get Drush 7 via git. You could clone it to your home directory.
+<code>
+$ git clone https://github.com/drush-ops/drush.git ~/drush7
+</code></p>
+
+<h5>Step 2</h5>
+
+<p>Setup a bash alias by adding the following line to <code>~/.bash_profile</code> or <code>~/.bashrc</code>.
+<code>
+$ alias drush7='~/drush7/drush'
+</code></p>
+
+<h5>Step 3</h5>
+
+<p>Reload <code>~/.bash_profile</code> or <code>~/.bashrc</code>.
+<code>
+$ source ~/.bash_profile
+</code></p>
+
+<h5>Test</h5>
+
+<p>You should now be able to run Drush commands for drupal 8. Try clearing the cache with:
+<code>
+$ drush7 cc all
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

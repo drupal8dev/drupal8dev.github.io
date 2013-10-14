@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://drupal8dev.github.io/sitemap.xml 

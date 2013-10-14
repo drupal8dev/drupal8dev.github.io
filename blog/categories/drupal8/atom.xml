@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: drupal8, | Drupal 8 Development]]></title>
+  <link href="http://drupal8dev.github.io/blog/categories/drupal8/atom.xml" rel="self"/>
+  <link href="http://drupal8dev.github.io/"/>
+  <updated>2013-10-15T02:50:17+04:00</updated>
+  <id>http://drupal8dev.github.io/</id>
+  <author>
+    <name><![CDATA[drupal8dev]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Drush for Drupal 8]]></title>
+    <link href="http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8/"/>
+    <updated>2013-10-15T02:02:00+04:00</updated>
+    <id>http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8</id>
+    <content type="html"><![CDATA[<p>Drush 6, the current stable version, does not work with Drupal 8. We will need Drush 7 for that. See <a href="https://github.com/drush-ops/drush#drush-versions.">https://github.com/drush-ops/drush#drush-versions.</a></p>
+
+<p>Drush 7 is not stable yet so we want to keep running Drush 6 for Drupal 7 but use Drush 7 with Drupal 8. Here&rsquo;s how you can run multiple versions of Drush:</p>
+
+<h5>Step 1</h5>
+
+<p>Get Drush 7 via git. You could clone it to your home directory.
+<code>
+$ git clone https://github.com/drush-ops/drush.git ~/drush7
+</code></p>
+
+<h5>Step 2</h5>
+
+<p>Setup a bash alias by adding the following line to <code>~/.bash_profile</code> or <code>~/.bashrc</code>.
+<code>
+$ alias drush7='~/drush7/drush'
+</code></p>
+
+<h5>Step 3</h5>
+
+<p>Reload <code>~/.bash_profile</code> or <code>~/.bashrc</code>.
+<code>
+$ source ~/.bash_profile
+</code></p>
+
+<h5>Test</h5>
+
+<p>You should now be able to run Drush commands for drupal 8. Try clearing the cache with:
+<code>
+$ drush7 cc all
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Installing Drupal 8]]></title>
+    <link href="http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8/"/>
+    <updated>2013-10-15T01:20:00+04:00</updated>
+    <id>http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/drupal8-setup-screen.png" width="700" height="380" title="&lsquo;Drupal 8 Installation&rsquo; &lsquo;Drupal 8 Installation&rsquo;" ></p>
+
+<h2>Getting Drupal 8</h2>
+
+<p>Drupal 8 is still pretty much in development, so there is no release on drupal.org yet. The best way to get the latest Drupal 8 is via git.</p>
+
+<pre><code>git clone --branch 8.x http://git.drupal.org/project/drupal.git drupal8
+</code></pre>
+
+<h3>Notes</h3>
+
+<ol>
+<li>Drupal 8 requires PHP 5.3. You&rsquo;ll need to set this up. More info <a href="http://www.php.net/manual/en/install.php">here</a>.</li>
+<li>Drush 6 is not going to work with Drupal 8. We&rsquo;ll need the use the development version Drush 7. See <a href="https://github.com/drush-ops/drush#drush-versions.">https://github.com/drush-ops/drush#drush-versions.</a></li>
+</ol>
+
+
+<h2>Installation</h2>
+
+<p>Once you&rsquo;ve cloned the Drupal code, set up your files (sites/default/files) directory and copy default.settings.php to settings.php. Next point your browser to your Drupal 8 codebase.</p>
+
+<p>Drupal 8 installation is very similar to Drupal 7, so nothing too difficult here. Note the awesome new theme.</p>
+
+<h3>Drupal is installed. What&rsquo;s different here?</h3>
+
+<p>Here are a few things to note:</p>
+
+<ol>
+<li>The following modules are now in core and enabled by default (using the standard profile)
+
+<ul>
+<li><em>views</em></li>
+<li><em>ckeditor:</em> The WYSIWYG editor for Drupal 8</li>
+<li><em>tour:</em> Provides guided tours.</li>
+<li><em>entity_reference:</em> Provides field for referencing other entities</li>
+<li>And yes, <em>toolbar</em> and <em>overlay</em> are still around.</li>
+</ul>
+</li>
+<li>Unlike Drupal 7, you&rsquo;re not logged in as administrator/user 1 after setup.</li>
+<li>Bartik is now responsive.</li>
+<li>Contact is now enabled in the standard profile and now accessible to anonymous users by default. Good.</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

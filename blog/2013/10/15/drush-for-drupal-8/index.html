@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Drupal 8 Development</title>
+  <title>Drush for Drupal 8 - Drupal 8 Development</title>
   <meta name="author" content="drupal8dev">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://drupal8dev.github.io">
+  <link rel="canonical" href="http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Drupal 8 Development" type="application/atom+xml">
@@ -63,15 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/10/15/drush-for-drupal-8/">Drush for Drupal 8</a></h1>
+      <h1 class="entry-title">Drush for Drupal 8</h1>
     
     
       <p class="meta">
@@ -94,7 +91,7 @@
   </header>
 
 
-  <div class="entry-content"><p>Drush 6, the current stable version, does not work with Drupal 8. We will need Drush 7 for that. See <a href="https://github.com/drush-ops/drush#drush-versions.">https://github.com/drush-ops/drush#drush-versions.</a></p>
+<div class="entry-content"><p>Drush 6, the current stable version, does not work with Drupal 8. We will need Drush 7 for that. See <a href="https://github.com/drush-ops/drush#drush-versions.">https://github.com/drush-ops/drush#drush-versions.</a></p>
 
 <p>Drush 7 is not stable yet so we want to keep running Drush 6 for Drupal 7 but use Drush 7 with Drupal 8. Here&rsquo;s how you can run multiple versions of Drush:</p>
 
@@ -132,22 +129,16 @@
 
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/15/installing-drupal-8/">Installing Drupal 8</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">drupal8dev</span></span>
+
+      
 
 
 
@@ -159,74 +150,49 @@
   
 
 
-<time datetime="2013-10-15T01:20:00+04:00" pubdate data-updated="true">Oct 15<span>th</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-10-15T02:02:00+04:00" pubdate data-updated="true">Oct 15<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/drupal8/'>drupal8,</a>, <a class='category' href='/blog/categories/drush/'>drush</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8/" data-via="drupal8dev" data-counturl="http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8/" >Tweet</a>
+  
+  
+  
+</div>
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/10/15/installing-drupal-8/" title="Previous Post: Installing Drupal 8">&laquo; Installing Drupal 8</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-  <div class="entry-content"><p><img class="center" src="/images/drupal8-setup-screen.png" width="700" height="380" title="Drupal 8 Installation" alt="Drupal 8 Installation"></p>
-
-<h2>Getting Drupal 8</h2>
-
-<p>Drupal 8 is still pretty much in development, so there is no release on drupal.org yet. The best way to get the latest Drupal 8 is via git.</p>
-
-<pre><code>git clone --branch 8.x http://git.drupal.org/project/drupal.git drupal8
-</code></pre>
-
-<h3>Notes</h3>
-
-<ol>
-<li>Drupal 8 requires PHP 5.3. You&rsquo;ll need to set this up. More info <a href="http://www.php.net/manual/en/install.php">here</a>.</li>
-<li>Drush 6 is not going to work with Drupal 8. We&rsquo;ll need the use the development version Drush 7. See <a href="https://github.com/drush-ops/drush#drush-versions.">https://github.com/drush-ops/drush#drush-versions.</a></li>
-</ol>
-
-
-<h2>Installation</h2>
-
-<p>Once you&rsquo;ve cloned the Drupal code, set up your files (sites/default/files) directory and copy default.settings.php to settings.php. Next point your browser to your Drupal 8 codebase.</p>
-
-<p>Drupal 8 installation is very similar to Drupal 7, so nothing too difficult here. Note the awesome new theme.</p>
-
-<h3>Drupal is installed. What&rsquo;s different here?</h3>
-
-<p>Here are a few things to note:</p>
-
-<ol>
-<li>The following modules are now in core and enabled by default (using the standard profile)
-
-<ul>
-<li><em>views</em></li>
-<li><em>ckeditor:</em> The WYSIWYG editor for Drupal 8</li>
-<li><em>tour:</em> Provides guided tours.</li>
-<li><em>entity_reference:</em> Provides field for referencing other entities</li>
-<li>And yes, <em>toolbar</em> and <em>overlay</em> are still around.</li>
-</ul>
-</li>
-<li>Unlike Drupal 7, you&rsquo;re not logged in as administrator/user 1 after setup.</li>
-<li>Bartik is now responsive.</li>
-<li>Contact is now enabled in the standard profile and now accessible to anonymous users by default. Good.</li>
-</ol>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
   <h1>About</h1>
-  <p>We&#8217;re learning Drupal 8 and writing about it here.</p>
+  <p>We're learning Drupal 8 and writing about it here.</p>
   <p><strong>You can be part of this effort!</strong></p>
   <p>The source code for this site is found on <a href="https://github.com/drupal8dev/site">Github</a>. Want to improve something? Pull requests are welcomed <a href="https://github.com/drupal8dev/site">here</a>.</p>
 </section>
@@ -248,7 +214,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/drupal8dev">@drupal8dev</a> on GitHub
@@ -281,6 +247,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -295,7 +262,10 @@
       var disqus_shortname = 'drupal8dev';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8/';
+        var disqus_url = 'http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
