@@ -2,22 +2,28 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8/</loc>
-        <lastmod>2013-10-15T10:17:45+04:00</lastmod>
+        <lastmod>2013-10-14T23:17:45-07:00</lastmod>
     </url>
     <url>
         <loc>http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8/</loc>
-        <lastmod>2013-10-15T10:17:38+04:00</lastmod>
+        <lastmod>2013-10-14T23:17:38-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://drupal8dev.github.io/blog/2013/10/17/drupal-config-storageexception-failed-to-write-configuration-file/
+        </loc>
+        <lastmod>2013-10-17T13:20:59-07:00</lastmod>
     </url>
     <url>
         <loc>http://drupal8dev.github.io/blog/archives/</loc>
-        <lastmod>2013-10-15T10:17:45+04:00</lastmod>
+        <lastmod>2013-10-17T13:20:59-07:00</lastmod>
     </url>
     <url>
         <loc>http://drupal8dev.github.io/</loc>
-        <lastmod>2013-10-15T10:17:45+04:00</lastmod>
+        <lastmod>2013-10-17T13:20:59-07:00</lastmod>
     </url>
     <url>
         <loc>http://drupal8dev.github.io/robots.txt</loc>
-        <lastmod>2013-10-15T01:47:35+04:00</lastmod>
+        <lastmod>2013-10-14T14:47:35-07:00</lastmod>
     </url>
 </urlset>

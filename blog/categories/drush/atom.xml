@@ -4,7 +4,7 @@
   <title><![CDATA[Category: drush | Drupal 8 Development]]></title>
   <link href="http://drupal8dev.github.io/blog/categories/drush/atom.xml" rel="self"/>
   <link href="http://drupal8dev.github.io/"/>
-  <updated>2013-10-15T10:17:58+04:00</updated>
+  <updated>2013-10-17T13:20:59-07:00</updated>
   <id>http://drupal8dev.github.io/</id>
   <author>
     <name><![CDATA[drupal8dev]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Drush for Drupal 8]]></title>
     <link href="http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8/"/>
-    <updated>2013-10-15T02:02:00+04:00</updated>
+    <updated>2013-10-15T02:02:00-07:00</updated>
     <id>http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8</id>
     <content type="html"><![CDATA[<p>Drush 6, the current stable version, does not work with Drupal 8. We will need Drush 7 for that. See <a href="https://github.com/drush-ops/drush#drush-versions.">https://github.com/drush-ops/drush#drush-versions.</a></p>
 

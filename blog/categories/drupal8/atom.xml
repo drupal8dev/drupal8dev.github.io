@@ -4,7 +4,7 @@
   <title><![CDATA[Category: drupal8 | Drupal 8 Development]]></title>
   <link href="http://drupal8dev.github.io/blog/categories/drupal8/atom.xml" rel="self"/>
   <link href="http://drupal8dev.github.io/"/>
-  <updated>2013-10-15T10:17:58+04:00</updated>
+  <updated>2013-10-17T13:20:59-07:00</updated>
   <id>http://drupal8dev.github.io/</id>
   <author>
     <name><![CDATA[drupal8dev]]></name>
@@ -14,9 +14,22 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Drupal\Core\Config\StorageException Failed to write configuration file]]></title>
+    <link href="http://drupal8dev.github.io/blog/2013/10/17/drupal-config-storageexception-failed-to-write-configuration-file/"/>
+    <updated>2013-10-17T12:46:00-07:00</updated>
+    <id>http://drupal8dev.github.io/blog/2013/10/17/drupal-config-storageexception-failed-to-write-configuration-file</id>
+    <content type="html"><![CDATA[<p>Fix permissions for your files directory:</p>
+
+<p><code>
+$ sudo chmod -R 777 sites/default/files
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Drush for Drupal 8]]></title>
     <link href="http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8/"/>
-    <updated>2013-10-15T02:02:00+04:00</updated>
+    <updated>2013-10-15T02:02:00-07:00</updated>
     <id>http://drupal8dev.github.io/blog/2013/10/15/drush-for-drupal-8</id>
     <content type="html"><![CDATA[<p>Drush 6, the current stable version, does not work with Drupal 8. We will need Drush 7 for that. See <a href="https://github.com/drush-ops/drush#drush-versions.">https://github.com/drush-ops/drush#drush-versions.</a></p>
 
@@ -55,7 +68,7 @@ $ drush7 cc all
   <entry>
     <title type="html"><![CDATA[Installing Drupal 8]]></title>
     <link href="http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8/"/>
-    <updated>2013-10-15T01:20:00+04:00</updated>
+    <updated>2013-10-15T01:20:00-07:00</updated>
     <id>http://drupal8dev.github.io/blog/2013/10/15/installing-drupal-8</id>
     <content type="html"><![CDATA[<p><img class="center" src="/images/drupal8-setup-screen.png" width="700" height="380" title="&lsquo;Drupal 8 Installation&rsquo; &lsquo;Drupal 8 Installation&rsquo;" ></p>
 
